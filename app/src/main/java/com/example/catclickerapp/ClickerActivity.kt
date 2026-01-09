@@ -28,9 +28,8 @@ class ClickerActivity : AppCompatActivity() {
         setupListeners()
     }
 
-    /**
-     * Настройка элементов интерфейса и слушателей
-     */
+
+    // Настройка элементов интерфейса и слушателей
     private fun setupListeners() = with(binding) {
 
         // Устанавливаем изображение выбранного кота
@@ -45,9 +44,7 @@ class ClickerActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Получение изображения кота из Intent и установка его в ImageView
-     */
+    // Получение изображения кота из Intent и установка его в ImageView
     private fun setupCatImage() = with(binding) {
 
         // Получаем id изображения, переданный из MainActivity
@@ -59,9 +56,7 @@ class ClickerActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Обновление счётчика кликов по изображению кота
-     */
+    // Обновление счётчика кликов по изображению кота
     @SuppressLint("SetTextI18n") // подавление предупреждения о конкатенации строк
     private fun updateCounter() = with(binding) {
 
